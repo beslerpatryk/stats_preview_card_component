@@ -45,12 +45,13 @@ section {
 	max-height: 780px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
 	text-align: center;
 	background-color: var(--dark-desaturated-blue);
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .card_container .image_container {
@@ -127,17 +128,7 @@ footer {
 }
 
 .attribution {
-	position: absolute;
-	color: white;
-	bottom: 0;
-	margin: 1rem 0;
-	left: 0;
-	width: 100%;
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: var(--soft-violet);
+	display: none;
 }
 
 @media (min-width: 1050px) {
@@ -194,5 +185,20 @@ footer {
 
 	.card_container .card_content ul li {
 		margin-right: 4rem;
+	}
+
+	.attribution {
+		display: initial;
+		position: absolute;
+		color: white;
+		bottom: 0;
+		margin: 1rem 0;
+		left: 0;
+		width: 100%;
+		font-size: 11px;
+		text-align: center;
+	}
+	.attribution a {
+		color: var(--soft-violet);
 	}
 }
